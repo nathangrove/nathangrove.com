@@ -1,0 +1,19 @@
+                 
+[0;31m               
+         ____            _           _       
+        |  _ \ _ __ ___ (_) ___  ___| |_ ___ 
+        | |_) | '__/ _ \| |/ _ \/ __| __/ __|
+        |  __/| | | (_) | |  __/ (__| |_\__ \
+        |_|   |_|  \___// |\___|\___|\__|___/
+                      |__/  
+          (latest 10 from my GitHub profile)                               
+[0m
+
++----------------------------------------------------------------------+
+| I have quite a few projects and more are getting added quite often.
+| Most of these are fun ideas I had that I wanted to see if they were
+| viable. Feel free to poke around, fork, etc. Reach out if you have
+| ideas to make these projects better or if you have questions.
++----------------------------------------------------------------------+
+
+{{projects}}

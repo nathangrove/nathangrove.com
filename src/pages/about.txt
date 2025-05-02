@@ -1,0 +1,60 @@
+   [0;32m        ____   ____  _    _ _______   __  __ ______ 
+     /\   |  _ \ / __ \| |  | |__   __| |  \/  |  ____|
+    /  \  | |_) | |  | | |  | |  | |    | \  / | |__   
+   / /\ \ |  _ <| |  | | |  | |  | |    | |\/| |  __|  
+  / ____ \| |_) | |__| | |__| |  | |    | |  | | |____ 
+ /_/    \_\____/ \____/ \____/   |_|    |_|  |_|______|[0m 
+                                                       
+        
++----------------------------------------------------------------------+                                               
+| I am a full stack web developer. I'm passionate about creating
+| unique and powerful experiences for web application consumption.
+| I want to meet people where they are and give them a great web
+| experience on any platform. Recently I've really enjoyed making
+| neural nets or integrating LLMs into my applications to take
+| them to the next level.
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+ 
+| [0;32mEducation:[0m
+| University of Missouri (2009-2013)
+| B.S. in Information Technology
+| Min. in Mathematics
++----------------------------------------------------------------------+ 
+
++----------------------------------------------------------------------+ 
+| [0;32mExperience:[0m
+| 
+| [0;31mAccretive Technology Group[0m
+| [0;33mTitle:[0m [0;34mSr. Software Engineer[0m
+| [0;33mPeriod:[0m [0;34mMarch 2022 - Present[0m
+| [0;33mDescription:[0m 
+| Sr. Engineer on a team that handles user signup and authentication 
+| for websites that experience millions of users each month. This 
+| includes integrating with identity providers AND service providers.
+|
+| ========================= 
+| 
+| [0;31mExegy Inc[0m
+| [0;33mTitle:[0m [0;34mSoftware Engineer / Security Engineer[0m
+| [0;33mPeriod:[0m [0;34mOct 2015 - March 2022[0m
+| [0;33mDescription:[0m 
+| Started as a software engineer focused on providing internal facing
+| tools primarily based on ServiceNow. Eventually working on a team
+| that built out a system that automated our change request processes.
+| I moved into an IAM role where I managed our coporate identity server
+| and access gateways.
+|
+| ========================= 
+|
+| [0;31mWireCloud[0m
+| [0;33mTitle:[0m [0;34mWeb Developer[0m
+| [0;33mPeriod:[0m [0;34m2012 - Oct 2015[0m
+| [0;33mDescription:[0m
+| Worked with clients to provide technical solutions for their needs.
+| I was part of a team that built out a full affiliate marketing network,
+| an email marketing platform, and an AI powered ad server. I also 
+| worked with clients in the real estate realm where I built 
+| investing calculators, automatic listing generators, and site
+| generators.
++----------------------------------------------------------------------+ 

@@ -1,0 +1,55 @@
+[0;33m
+  _   _       _   _                    _____                    
+ | \ | |     | | | |                  / ____|                   
+ |  \| | __ _| |_| |__   __ _ _ __   | |  __ _ __ _____   _____ 
+ | . ` |/ _` | __| '_ \ / _` | '_ \  | | |_ | '__/ _ \ \ / / _ \
+ | |\  | (_| | |_| | | | (_| | | | | | |__| | | | (_) \ V /  __/
+ |_| \_|\__,_|\__|_| |_|\__,_|_| |_|  \_____|_|  \___/ \_/ \___|
+ 
+                (A Fullstack WebDeveloper)                                 
+[0m
+
+[0;90mLooks like you've found the terminal entrance... awesome. Welcome.[0m
+
+
++----------------------------------------------------------------------+
+| [0;32mAbout Me:[0m                                                            |
++----------------------------------------------------------------------+
+| I'm a fullstack web developer and a machine learning engineer        |
+| For more info, please visit: [0;36mhttps://nathangrove.com/about[0m           |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| [0;31mProjects:[0m                                                            |
++----------------------------------------------------------------------+
+| I have a lot of cool projects that I've played around with. Most of  |
+| them are prototypes and never actually released to production. Most  |
+| were born from a simple idea and prototyped to see if the idea was   |
+| viable.                                                              |
+|                                                                      |
+| You can view my projects in a browser on GitHub:                     |
+| [0;36mhttps://github.com/nathangrove[0m                                       |
+|                                                                      |
+| You can view a termainal friendly version of my projects by visiting |
+| the projects page: [0;36mhttps://nathangrove.com/projects[0m                  |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| [0;35mObligatory Technology Buzzwords I know:[0m                              |
++--------------------------+-----------------------+-------------------+
+| [0;37mFrontend[0m     | [0;37mBackend[0m         | [0;37mDatabases[0m  | [0;37mMisc[0m                   |
++--------------------------+-----------------------+-------------------+
+| Angular      | Nest.js         | MySQL      | ServiceNow             |
+| React        | Express.js      | MongoDB    | Linux                  |
+| Next.js      | PHP             |            | Neural Networks        |
+|              | Python          |            | Torch                  |
++--------------------------+-----------------------+-------------------+
+
+Thank you for visiting!
+
+[0;31m========================================================================
+| NOTE: This site is best used with a curl command piped to less with 
+| the raw flag: 
+| `curl -s https://nathangrove.com | less -r`
+========================================================================[0m
+
