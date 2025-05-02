@@ -1,6 +1,6 @@
 # Nathan Grove's Personal Website (nathangrove.com)
 
-This repository contains the source code for my personal website, designed with a unique dual interface: one optimized for terminal access via `curl` or `wget`, and another standard HTML version for web browsers.
+This repository contains the source code for my personal website, designed with a unique dual interface: one optimized for terminal access via `curl` or `wget`, and another standard HTML version for web browsers. This was made to be able to be deployed directly to my hosting provider.
 
 ## Features
 
@@ -20,39 +20,49 @@ This repository contains the source code for my personal website, designed with 
 
 ## Technology Stack
 
-*   **Backend:** PHP (using the built-in web server for local development)
+*   **Containerization:** Docker, Docker Compose (for development)
+*   **Web Server:** Apache (within Docker)
+*   **Backend:** PHP
 *   **Frontend (Browser):** HTML, CSS
 *   **Frontend (Terminal):** Plain Text, ASCII Art, ANSI Escape Codes
 *   **Data:** JSON (for caching GitHub projects)
+*   **Routing:** Apache (`.htaccess`), PHP (`index.php`)
 
-## Running Locally
+## Running Locally (Docker)
 
-1.  **Clone the repository:**
+1.  **Prerequisites:** Ensure you have Docker and Docker Compose installed.
+2.  **Clone the repository:**
     ```bash
     git clone <repository-url>
     cd nathangrove.com
     ```
-2.  **Start the PHP built-in web server:**
-    The server needs to be pointed to the `src` directory as the document root, and use `index.php` as the router script to handle requests correctly.
+3.  **Build and start the Docker container:**
+    This command builds the custom Docker image (if it doesn't exist or if the Dockerfile changed) and starts the Apache/PHP service.
     ```bash
-    php -S localhost:8000 -t src/ src/index.php
+    docker-compose up --build -d
     ```
-    *(Note: The `localdev.sh` script in the root contains this command)*
-3.  **Access the site:**
-    *   **Browser:** Open `http://localhost:8000` in your web browser.
-    *   **Terminal:** Use `curl -s localhost:8000`, `curl -s localhost:8000/about`, etc. I find it easier to read if piped to `less -r`
+    *   Use `-d` to run in detached mode (in the background).
+    *   To stop the service, run `docker-compose down`.
+4.  **Access the site:**
+    *   **Browser:** Open `http://localhost:8080` in your web browser (Note the port is 8080 as defined in `docker-compose.yml`).
+    *   **Terminal:** Use `curl -s localhost:8080`, `curl -s localhost:8080/about`, etc. I find it easier to pipe the curl output to `less -r`
 
 ## File Structure
+
 ```
-├── localdev.sh # Script to start local PHP server  
-├── README.md # This file  
-└── src/  
-    ├── .htaccess # Apache config (optional, PHP router preferred for dev)  
-    ├── index.php # Main router and logic script  
-    ├── projects.json # Cache for GitHub project data (not stored in the repo)
-    └── pages/  
-        ├── *.html # HTML page templates  
-        ├── *.txt # Terminal page templates  
-        └── assets/  
-            └── style.css # CSS for HTML pages 
+.
+├── Dockerfile              # Defines the custom PHP/Apache image
+├── docker-compose.yml      # Configures the Docker services
+├── README.md               # This file
+├── apache/
+│   └── 000-default.conf    # Custom Apache virtual host configuration
+└── src/
+    ├── .htaccess           # Apache rewrite rules for routing
+    ├── index.php           # Main router and logic script
+    ├── projects.json       # Cache for GitHub project data
+    └── pages/
+        ├── *.html          # HTML page templates
+        ├── *.txt           # Terminal page templates
+        └── assets/
+            └── style.css     # CSS for HTML pages
 ```

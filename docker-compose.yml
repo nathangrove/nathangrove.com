@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    build: . # Build the image from the Dockerfile in the current directory
+    ports:
+      - "8080:80" # Map host port 8080 to container port 80
+    volumes:
+      - ./:/var/www/html # Mount your src directory to Apache's web root
+      - ./apache/000-default.conf:/etc/apache2/sites-available/000-default.conf # Mount custom Apache config
+    # No need to mention mod_rewrite here, it's handled in the Dockerfile
