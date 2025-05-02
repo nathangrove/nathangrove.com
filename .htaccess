@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /
+
+# If the request is for an existing file or directory in the root, serve it directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise, rewrite the request to src/index.php
+# This effectively routes all non-file/non-directory requests (like /about, /projects)
+# and potentially requests for files within src (like /assets/style.css)
+# to the PHP script for handling.
+RewriteRule ^ src/index.php [L,QSA]
